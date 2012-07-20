@@ -6,9 +6,9 @@ local ruby19='ruby-1.9.3-p194'
 
 function rvmrc {
 	if [ -z "$1" ]; then
-		rvm --rvmrc --create $ruby19@${PWD##*/}
+		echo "rvm --create use \"$ruby19@${PWD##*/}\"" >> .rvmrc
 	else
-		rvm --rvmrc --create $ruby19@$1
+		echo "rvm --create use \"$ruby19@$1\"" >> .rvmrc
 	fi
 	local current_path=$PWD
 	..
