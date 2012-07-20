@@ -1,0 +1,34 @@
+<snippet>
+    <content><![CDATA[
+group :development, :test do
+	gem "rspec"
+	gem "rspec-rails"
+	gem "faker"
+	gem "factory_girl_rails"
+	gem "database_cleaner"
+	gem "guard"
+	gem "guard-rspec"
+	gem "spork-rails"
+	gem "guard-spork"
+	gem "growl"
+	${1:#optional: }gem "vcr"
+	${3:#optional: }gem "capybara"
+	${3:#optional: }gem "launchy"
+end
+
+#Next Steps:
+#======================
+#1. 	Run Bundle install
+#2. 	Install Rspec
+#		rails g rspec:install
+#3.	Initialize Guard with rspec & spork
+#		spork rspec --bootstrap
+#		guard init rspec
+#		guard init spork
+#4.	Config capybara- add the following lines in spec/spec_helper.rb:
+#		require 'capybara/rspec'
+#		require 'capybara/rails']]></content>
+    <tabTrigger>tdd</tabTrigger>
+    <scope>source.ruby</scope>
+    <description>TDD Infrastructure Gems Preparing</description>
+</snippet>

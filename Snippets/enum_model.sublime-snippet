@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+${1:ENUM_NAME} = { $2 }
+
+def ${3:field_name}
+	${1:ENUM_NAME}.key(read_attribute(:${3:field_name}))
+end
+
+def ${3:field_name}=(value)
+	write_attribute(:${3:field_name}, ${1:ENUM_NAME}[value])
+end]]></content>
+    <tabTrigger>enum</tabTrigger>
+    <scope>source.ruby</scope>
+    <description>Enum pattern for Model</description>
+</snippet>
