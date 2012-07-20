@@ -30,8 +30,8 @@ echo "Put Homebrew location earlier in PATH ..."
 export PATH='/usr/local/bin:$PATH'" >> ~/.zshrc
   source ~/.zshrc
 
-echo "Installing Postgres ..."
-  brew install postgres --no-python
+#echo "Installing Postgres ..."
+#  brew install postgres --no-python
 
 echo "Installing ack, a good way to search through files ..."
   brew install ack
@@ -59,6 +59,7 @@ echo "Installing the Taps gem to push and pull SQL databases between development
 
 echo "Installing the pg gem to talk to Postgres databases ..."
 env ARCHFLAGS="-arch x86_64" gem install --no-ri --no-rdoc pg -- --with-pg-config=/usr/local/Cellar/postgresql/9.1.4/bin/pg_config
+ln -s /Library/PostgreSQL/9.1/lib/libpq.5.4.dylib /usr/local/lib/libpq.5.4.dylib
 
 echo "Installing the foreman gem for serving your Rails apps in development mode ..."
   gem install foreman --no-rdoc --no-ri
