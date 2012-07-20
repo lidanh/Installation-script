@@ -3,6 +3,11 @@
 echo "Installing oh-my-zsh for a better terminal"
   curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
+echo "Config symlink to Sublime Text 2 ..."
+ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+
+sh dotfiles.sh
+
 echo "Config git ..."
   git config --global user.name "Lidan Hifi"
   git config --global user.email "euroil@gmail.com"
@@ -38,9 +43,6 @@ echo "Installing RVM (Ruby Version Manager) ..."
   
 exec zsh
 
-echo "Config symlink to Sublime Text 2 ..."
-ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-
 echo "Installing Ruby 1.9.3 stable and making it the default Ruby ..."
   rvm install 1.9.3
   rvm use 1.9.3 --default
@@ -65,5 +67,7 @@ echo "Installing the heroku-accounts plugin for using multiple Heroku accounts..
 
 echo "Installing the heroku-config plugin for pulling config variables locally to be used as ENV variables ..."
   heroku plugins:install git://github.com/ddollar/heroku-config.git
+
+exec zsh
 
 echo "Completed successfuly!"
