@@ -18,6 +18,7 @@ echo "Copying Sublime Text 2 themes and settings ..."
 cp Themes/Twilight.tmTheme ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Color\ Scheme\ -\ Default/
 cp Themes/Twilight.tmTheme.cache ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Color\ Scheme\ -\ Default/
 cp dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
+cp dotfiles/Widget.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Theme\ -\ Default/
 mkdir ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Rails/Snippets
 cp Snippets/* ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Rails/Snippets
 
