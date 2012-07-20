@@ -1,3 +1,4 @@
+# curl -L https://github.com/lidanh/installation-script/raw/master/mac.sh | sh
 #!/usr/bin/env zsh
 
 echo "Installing oh-my-zsh for a better terminal"
