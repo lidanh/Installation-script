@@ -10,6 +10,8 @@ echo "Copying ZSH themes and settings ..."
 cp Themes/prose.zsh-theme ~/.oh-my-zsh/themes
 cp dotfiles/rails3.plugin.zsh ~/.oh-my-zsh/plugins/rails3
 cp dotfiles/git.plugin.zsh ~/.oh-my-zsh/plugins/git
+cp dotfiles/rvm.plugin.zsh ~/.oh-my-zsh/plugins/rvm
+echo "shell -${SHELL}" >> ~/.screenrc
 cp dotfiles/.zshrc ~/
 
 

@@ -29,7 +29,7 @@ ZSH_THEME="prose"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx ruby rails3 rake vagrant heroku bundler)
+plugins=(git osx ruby rails3 rvm rake vagrant heroku bundler)
 
 source $ZSH/oh-my-zsh.sh
 
