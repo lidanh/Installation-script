@@ -14,6 +14,9 @@ cp dotfiles/rvm.plugin.zsh ~/.oh-my-zsh/plugins/rvm
 echo "shell -${SHELL}" >> ~/.screenrc
 cp dotfiles/.zshrc ~/
 
+# Bundler
+cp dotfiles/.gemrc ~/
+
 
 # Sublime Text
 echo "Copying Sublime Text 2 themes and settings ..."

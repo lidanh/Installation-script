@@ -1,5 +1,0 @@
-<snippet>
-    <content><![CDATA[rvm --create use "ruby-1.9.3-p125@${1:Gemset Name}"]]></content>
-    <tabTrigger>rvm</tabTrigger>
-    <description>.rvmrc gemset file</description>
-</snippet>
